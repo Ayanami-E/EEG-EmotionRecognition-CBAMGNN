@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader, Dataset
 from sklearn.preprocessing import StandardScaler
 import scipy.io as scio
 
-# 在这里 import 你新的 modelM1.py 文件
+# 在这里 import 你新的 modelM1.py 文件（如果要魔改的话这个就是train 只需要变model文件名就可以了）
 from modelM1 import ChannelBandAttentionModelM1
 
 # ================== 辅助函数 ==================
@@ -72,7 +72,7 @@ def evaluate(model, data_iter, device='cuda'):
 
     return overall_acc, class_acc
 
-# ========== 单频带训练函数 (类似 tryS3.py) ==========
+# ========== 单频带训练函数==========
 def train_one_band(
     dir_path,
     band_idx,
