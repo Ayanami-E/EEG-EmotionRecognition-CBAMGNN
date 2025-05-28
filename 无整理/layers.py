@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 from torch.nn.modules.module import Module
-
+#图卷积的本体 这个要修改的话就不太知道怎么改了
 
 class GraphConvolution(nn.Module):
 
