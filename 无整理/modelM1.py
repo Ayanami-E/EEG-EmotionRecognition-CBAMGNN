@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 from layers import GraphConvolution
 from utils import generate_cheby_adj, normalize_A
-
+#魔改的本体 继续优化的话应该使用更聪明的办法调节两个注意力机制和多尺度池化的具体尺度
 # ================== 通道注意力 ==================
 class EnhancedChannelAttention(nn.Module):
     """优化的通道注意力机制"""
