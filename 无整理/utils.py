@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset
-
+#github上一个老哥的开源 可以用我就直接用了
 
 def normalize_A(A, symmetry=False):
     A = F.relu(A)
